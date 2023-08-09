@@ -1,0 +1,12 @@
+.drink {
+    padding: 170px 0px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &__box {
+        width: 50%;
+        background:white;
+        padding: 40px;
+    }
+}

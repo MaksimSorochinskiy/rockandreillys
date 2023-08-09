@@ -1,0 +1,33 @@
+:root {
+    --main-color:#064833;
+    --white-color:#ffff;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Queen of Clubs', sans-serif;
+          position: relative;                                      
+}
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-family: 'Inter', sans-serif;
+}
+h2 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;  
+}
+.flex {
+    display: flex;
+}

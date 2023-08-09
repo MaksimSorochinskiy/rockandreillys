@@ -1,0 +1,23 @@
+.role {
+    padding: 120px 0px;
+    background:var(--main-color);
+    .container {
+        justify-content: center;
+    }
+    hr {
+        width: 100%;
+        margin: 0px;
+        height: 2px;
+        border:none;
+        background:#CEA35D;
+    }
+    &__wrapp {
+        width: 60%;
+        flex-direction: column;
+        text-align: center;
+        img {
+            height: 380px;
+            object-fit: contain;
+        }
+    }
+}
