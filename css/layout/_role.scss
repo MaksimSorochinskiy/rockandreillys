@@ -9,15 +9,29 @@
         margin: 0px;
         height: 2px;
         border:none;
-        background:#CEA35D;
+        background:var(--gold-color);
+    }
+    .line-1 {
+        margin-bottom: 2px;
+    }
+    h2 {
+        color:var(--gold-color);
+        margin-bottom: 16px;
     }
     &__wrapp {
-        width: 60%;
+        width: 45%;
         flex-direction: column;
         text-align: center;
         img {
             height: 380px;
             object-fit: contain;
+        }
+    }
+    &__text {
+        padding: 24px 0px;
+
+        p {
+            color:var(--white-color);
         }
     }
 }

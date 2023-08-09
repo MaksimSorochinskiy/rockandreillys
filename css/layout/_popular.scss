@@ -1,0 +1,15 @@
+.popular {
+    padding-top: 120px;
+    text-align: center;
+    background:var(--main-color);
+
+    h2 {
+        color:var(--gold-color);
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}

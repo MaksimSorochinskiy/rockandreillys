@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.2 | 20191019
    License: none (public domain)
@@ -60,6 +61,7 @@ table {
 :root {
   --main-color:#064833;
   --white-color:#ffff;
+  --gold-color:#CEA35D;
 }
 
 * {
@@ -83,6 +85,10 @@ a {
 
 p {
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 h2 {
@@ -94,6 +100,12 @@ h2 {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto-fill, 2fr);
 }
 
 header {
@@ -146,16 +158,29 @@ header .logo {
   margin: 0px;
   height: 2px;
   border: none;
-  background: #CEA35D;
+  background: var(--gold-color);
+}
+.role .line-1 {
+  margin-bottom: 2px;
+}
+.role h2 {
+  color: var(--gold-color);
+  margin-bottom: 16px;
 }
 .role__wrapp {
-  width: 60%;
+  width: 45%;
   flex-direction: column;
   text-align: center;
 }
 .role__wrapp img {
   height: 380px;
   object-fit: contain;
+}
+.role__text {
+  padding: 24px 0px;
+}
+.role__text p {
+  color: var(--white-color);
 }
 
 .drink {
@@ -168,4 +193,30 @@ header .logo {
   width: 50%;
   background: white;
   padding: 40px;
+  background-image: url("/img/bg.png"), linear-gradient(0deg, #F3EDE2 0%, #F3EDE2 100%);
+  background-color: lightgray, #064833;
+  background-size: 100px 100px, cover; /* Измените размер в соответствии с вашими требованиями */
+  background-repeat: repeat, no-repeat;
+}
+.drink__box h2 {
+  color: var(--gold-color);
+}
+
+.popular {
+  padding-top: 120px;
+  text-align: center;
+  background: var(--main-color);
+}
+.popular h2 {
+  color: var(--gold-color);
+}
+.popular img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+footer {
+  background: var(--main-color);
 }/*# sourceMappingURL=main.css.map */
