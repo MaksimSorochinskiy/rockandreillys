@@ -1,0 +1,31 @@
+.press {
+    background-color: #F3EDE2;
+    padding: 270px 0;
+    position: relative;
+    
+   .container {
+        justify-content: center;
+        align-items:center;
+   }
+
+   &__box {
+        background: #F3EDE2;
+        box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.15);
+        display: inline-flex;
+        padding: 32px;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        width: 45%;
+        h3 {
+            color: #000;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 40px; /* 133.333% */
+            text-transform: uppercase;
+        }
+   }
+}

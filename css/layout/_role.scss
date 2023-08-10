@@ -19,7 +19,7 @@
         margin-bottom: 16px;
     }
     &__wrapp {
-        width: 45%;
+        width: 50%;
         flex-direction: column;
         text-align: center;
         img {
@@ -32,6 +32,10 @@
 
         p {
             color:var(--white-color);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; 
         }
     }
 }
