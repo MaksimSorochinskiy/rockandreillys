@@ -449,6 +449,11 @@ header .nav-burger {
   gap: 16px;
 }
 
+@media screen and (max-height: 700px) {
+  .hero img {
+    height: 300px;
+  }
+}
 @media screen and (max-width: 900px) {
   .nav-burger {
     display: flex !important;
