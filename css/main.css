@@ -315,11 +315,26 @@ header .logo {
   padding: 270px 0;
   position: relative;
 }
+.press__bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.press__bg img {
+  position: relative;
+  width: 100%;
+}
 .press .container {
   justify-content: center;
   align-items: center;
 }
 .press__box {
+  position: relative;
+  z-index: 10;
   background: #F3EDE2;
   box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.15);
   display: inline-flex;
