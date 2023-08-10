@@ -1,0 +1,97 @@
+@media screen and (max-width: 900px) {
+    .nav-burger{
+        display: flex!important;
+        flex-direction: column;
+        gap: 8px;
+        span {
+            transition: all 0.3s ease;
+            background: var(--white-color);
+            display: block;
+            height: 3px;
+            width: 40px;
+        }
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 120px 0px 0px 0px;
+        &__info {
+            width: 100%;
+            margin-bottom: 120px;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__img {
+            position:relative;
+            width: 100%;
+            img {
+                display: block;
+            }
+        }
+    }
+    .role {
+        &__wrapp {
+            width: 90%;
+        }
+    }
+    .drink {
+        background-position: 100%;
+        &__box {
+            width:90%;
+        }
+    }
+    .friends {
+        &__img {
+            flex-wrap: wrap;
+            div {
+                width: 100%;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            flex-direction:column;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h2 {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+    }
+    .nav {
+        display:none;
+    }
+    .role {
+        &__img {
+            img {
+                height:250px;
+            }
+        }
+    }
+    .drink {
+        &__box {
+            width:100%;
+            padding: 24px;
+            hr {
+                background-repeat:no-repeat;
+            }
+        }
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .friends {
+        padding-top: 96px;
+        &__text {
+            width: 100%;
+        }
+        p {
+            width: 100%;
+        }
+    }
+ }
