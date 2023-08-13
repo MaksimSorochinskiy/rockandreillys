@@ -107,6 +107,10 @@ h2 {
   grid-template-rows: repeat(auto-fill, 2fr);
 }
 
+.body-lock {
+  overflow-y: hidden;
+}
+
 header {
   position: absolute;
   z-index: 100;
@@ -139,6 +143,36 @@ header .logo {
 }
 header .nav-burger {
   display: none;
+}
+
+.header-show {
+  background: var(--main-color);
+  height: 100vh;
+}
+.header-show .nav {
+  display: flex;
+  flex-direction: column;
+}
+.header-show .nav .logo-href {
+  display: none;
+}
+.header-show .nav ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header-show .nav ul a {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+}
+
+.logo-mob {
+  display: none;
+}
+.logo-mob img {
+  width: 80px;
+  height: 80px;
 }
 
 .hero {
@@ -455,6 +489,9 @@ header .nav-burger {
 .footer__nav {
   gap: 36px;
 }
+.footer__nav ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
 .footer__down {
   text-decoration-line: underline;
 }
@@ -506,10 +543,14 @@ header .nav-burger {
   .about__img img {
     display: block;
   }
+  .about::before {
+    top: -50px;
+  }
   .role__wrapp {
     width: 90%;
   }
   .drink {
+    padding: 280px 0px;
     background-position: 100%;
   }
   .drink__box {
@@ -521,6 +562,9 @@ header .nav-burger {
   .friends__img div {
     width: 100%;
   }
+  .friends__text {
+    width: 80%;
+  }
   .press__info {
     width: 90%;
   }
@@ -529,11 +573,13 @@ header .nav-burger {
   }
   .footer__info {
     flex-direction: column;
+    gap: 34px;
   }
   .footer__nav {
     flex-direction: column;
     align-items: center;
     order: 2;
+    text-align: center;
   }
   .footer__icons {
     justify-content: center;
@@ -547,6 +593,12 @@ header .nav-burger {
   }
   .footer__icons {
     order: 3;
+  }
+  .footer__cop {
+    margin-top: 32px;
+  }
+  .logo-mob {
+    display: inline-block;
   }
 }
 @media screen and (max-width: 700px) {

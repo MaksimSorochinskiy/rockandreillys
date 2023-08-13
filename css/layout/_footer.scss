@@ -36,6 +36,11 @@
     }
     &__nav {
         gap: 36px;
+        ul {
+            li:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
     }
     &__down {
         text-decoration-line: underline;

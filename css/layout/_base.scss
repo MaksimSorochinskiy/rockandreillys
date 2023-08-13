@@ -42,3 +42,7 @@ h2 {
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(auto-fill, 2fr);
 }
+
+.body-lock {
+    overflow-y: hidden;
+}
