@@ -155,6 +155,12 @@ header .nav-burger {
   align-items: center;
   justify-content: center;
 }
+.hero__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .about {
   position: relative;
@@ -210,6 +216,13 @@ header .nav-burger {
   position: relative;
   width: 100%;
   object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+.hidden div.red {
+  background: red;
 }
 
 .role {

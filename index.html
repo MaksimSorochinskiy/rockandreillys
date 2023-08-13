@@ -13,6 +13,10 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+        />
         <link rel="stylesheet" href="./css/main.css" />
 
         <title>main page</title>
@@ -55,6 +59,73 @@
             <section class="hero" style="background: url('./img/bg-hero.png')">
                 <div class="container">
                     <img src="./img/logo-2.png" alt="" />
+                    <div class="hero__modal">
+                        <a data-fancybox data-src="#open" href="javascript:;">
+                            <svg
+                                width="140"
+                                height="140"
+                                viewBox="0 0 140 140"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g filter="url(#filter0_b_392_441)">
+                                    <circle
+                                        cx="70"
+                                        cy="70"
+                                        r="70"
+                                        fill="black"
+                                        fill-opacity="0.2"
+                                    />
+                                </g>
+                                <path
+                                    d="M102.667 70L53.6667 98.2902L53.6667 41.7098L102.667 70Z"
+                                    fill="white"
+                                />
+                                <defs>
+                                    <filter
+                                        id="filter0_b_392_441"
+                                        x="-18"
+                                        y="-18"
+                                        width="176"
+                                        height="176"
+                                        filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB"
+                                    >
+                                        <feFlood
+                                            flood-opacity="0"
+                                            result="BackgroundImageFix"
+                                        />
+                                        <feGaussianBlur
+                                            in="BackgroundImageFix"
+                                            stdDeviation="9"
+                                        />
+                                        <feComposite
+                                            in2="SourceAlpha"
+                                            operator="in"
+                                            result="effect1_backgroundBlur_392_441"
+                                        />
+                                        <feBlend
+                                            mode="normal"
+                                            in="SourceGraphic"
+                                            in2="effect1_backgroundBlur_392_441"
+                                            result="shape"
+                                        />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="hidden">
+                        <div class="red" id="open">
+                            <video controls autoplay width="600" muted>
+                                <source
+                                    src="./video/video.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="about">
@@ -377,6 +448,7 @@
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
