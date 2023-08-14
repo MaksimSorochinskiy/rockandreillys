@@ -1,6 +1,10 @@
-// @media (hover: hover) {
-    
-// }
+@media (hover: hover) {
+   .nav {
+    a:hover {
+        color:var(--gold-color);
+    }
+   } 
+}
 @media screen and (max-height: 700px) {
     .hero {
         img {
