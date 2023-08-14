@@ -143,6 +143,16 @@ header .logo {
 }
 header .nav-burger {
   display: none;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .header-show {
@@ -152,6 +162,8 @@ header .nav-burger {
 .header-show .nav {
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
+  gap: 24px;
 }
 .header-show .nav .logo-href {
   display: none;
@@ -159,6 +171,7 @@ header .nav-burger {
 .header-show .nav ul {
   flex-direction: column;
   align-items: flex-start;
+  gap: 24px;
 }
 .header-show .nav ul a {
   font-size: 64px;
@@ -169,10 +182,63 @@ header .nav-burger {
 
 .logo-mob {
   display: none;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
 }
 .logo-mob img {
   width: 80px;
   height: 80px;
+}
+
+.nav-burger span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-burger span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-burger span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-burger.burger-menu-active span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -7px;
+  left: 8px;
+  position: relative;
+}
+
+.nav-burger.burger-menu-active span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.nav-burger.burger-menu-active span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: -2px;
+  left: 8px;
+  position: relative;
 }
 
 .hero {
@@ -523,6 +589,7 @@ header .nav-burger {
     flex-direction: column;
     float: right;
     gap: 8px;
+    position: relative;
   }
   .nav-burger span {
     transition: all 0.3s ease;

@@ -14,6 +14,7 @@
         flex-direction: column;
         float: right;
         gap: 8px;
+        position: relative;
             span {
                 transition: all 0.3s ease;
                 background: var(--white-color);
