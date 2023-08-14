@@ -115,6 +115,18 @@
     .logo-mob {
         display: inline-block;
     }
+    .location {
+        .container {
+            flex-direction: column;
+            gap: 64px;
+        }
+        &__accordion {
+            width: 100%;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 700px) {

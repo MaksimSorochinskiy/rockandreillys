@@ -113,6 +113,66 @@ h2 {
   -webkit-overflow-scrolling: touch;
 }
 
+.section-green {
+  background: var(--main-color);
+  padding: 64px 0px;
+}
+
+.accordion-button {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+}
+
+.location .container {
+  justify-content: space-between;
+}
+.location__accordion {
+  width: calc(60% - 112px);
+  color: #fff;
+}
+.location__accordion button {
+  color: #fff;
+  background-color: transparent;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.location__accordion .accordion-item {
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid #fff;
+}
+.location__accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #fff;
+}
+.location__accordion .accordion-body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.location__accordion .accordion-button::after {
+  width: 23px;
+  height: 11.5px;
+  margin: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='18' viewBox='0 0 27 18' fill='none'%3E%3Cpath d='M2 2.25L13.5 13.75L25 2.25' stroke='white' stroke-width='5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.location__img {
+  width: 40%;
+}
+.location__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 header {
   position: absolute;
   z-index: 100;
@@ -248,6 +308,9 @@ header .nav-burger {
   width: 100%;
   position: relative;
   top: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 .hero .container {
   position: relative;
@@ -268,6 +331,41 @@ header .nav-burger {
 }
 .hero__video .video {
   width: 100%;
+}
+
+.hero-page {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+.hero-page::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+.hero-page .container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+}
+.hero-page h1 {
+  color: var(--white, #FFF);
+  font-family: "Queen of Clubs", sans-serif;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128px;
 }
 
 .fancybox-content {
@@ -680,6 +778,16 @@ header .nav-burger {
   }
   .logo-mob {
     display: inline-block;
+  }
+  .location .container {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .location__accordion {
+    width: 100%;
+  }
+  .location__img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 700px) {
