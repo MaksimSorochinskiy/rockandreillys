@@ -18,8 +18,9 @@
         transform: translate(-50%, -50%);
     }
     &__video {
+        width: 80%;
         .video {
-            width: 800px;
+            width: 100%;
         }
         
     }
