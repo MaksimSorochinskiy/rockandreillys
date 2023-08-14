@@ -17,5 +17,19 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    &__video {
+        .video {
+            width: 800px;
+        }
+        
+    }
     
+}
+
+.fancybox-content {
+    background:none;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    color:#fff;
 }

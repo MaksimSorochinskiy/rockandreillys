@@ -195,6 +195,17 @@ header .nav-burger {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.hero__video .video {
+  width: 800px;
+}
+
+.fancybox-content {
+  background: none;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  color: #fff;
+}
 
 .about {
   position: relative;
