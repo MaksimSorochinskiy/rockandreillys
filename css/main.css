@@ -376,7 +376,7 @@ header .nav-burger {
 
 .press {
   background-color: #F3EDE2;
-  padding: 60px 0 270px 0;
+  padding: 60px 0 800px 0;
   position: relative;
 }
 .press__bg {
@@ -393,7 +393,6 @@ header .nav-burger {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
 }
 .press .container {
   justify-content: center;
