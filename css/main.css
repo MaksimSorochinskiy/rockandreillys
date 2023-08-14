@@ -109,8 +109,8 @@ h2 {
 
 .body-lock {
   overflow-y: hidden;
-  position: sticky;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
+  min-height: 100%;
 }
 
 .section-green {
