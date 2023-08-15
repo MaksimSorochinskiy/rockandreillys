@@ -84,7 +84,14 @@ h2 {
         .accordion-button:not(.collapsed) {
             background-color: transparent;
             color:#fff;
+            box-shadow: none;
         }
+        .accordion-button:focus {
+            border:none;
+            border-color: transparent;
+            box-shadow: none;
+        }
+       
         .accordion-body {
             font-family: 'Inter', sans-serif;
             font-size: 16px;
