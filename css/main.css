@@ -882,6 +882,15 @@ header .nav-burger {
   .location__img {
     width: 100%;
   }
+  .form-section__text {
+    width: 90%;
+  }
+  .form-section__text p {
+    width: 60%;
+  }
+  .form-section__form {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 700px) {
   .hero-page {
@@ -936,6 +945,18 @@ header .nav-burger {
     width: 100%;
   }
   .friends p {
+    width: 100%;
+  }
+  .form-section__text {
+    width: 100%;
+  }
+  .form-section__text p {
+    width: 90%;
+  }
+  .form-box {
+    flex-direction: column;
+  }
+  .form-label {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

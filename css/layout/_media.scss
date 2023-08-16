@@ -131,7 +131,20 @@
             width: 100%;
         }
     }
+    .form-section {
+        &__text {
+            width: 90%;
+            p {
+                width: 60%;
+            }
+        }
+        &__form {
+            width: 100%;
+        }
+    }
 }
+
+
 
 @media screen and (max-width: 700px) {
     .hero-page { 
@@ -195,5 +208,20 @@
         p {
             width: 100%;
         }
+    }
+    .form-section {
+        &__text {
+            width: 100%;
+            p {
+                width: 90%;
+            }
+        }
+    }
+    .form-box {
+        flex-direction: column;
+    
+    }
+    .form-label {
+        width: 100%;    
     }
 }
