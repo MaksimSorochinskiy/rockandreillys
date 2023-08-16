@@ -134,7 +134,18 @@
 }
 
 @media screen and (max-width: 700px) {
-    h2 {
+    .hero-page { 
+        height: 40vh;
+        h1 {
+            color: #fff;
+            font-family: Queen of Clubs;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 88px;
+        }
+    }
+    h2,.accordion-button {
         font-size: 48px;
         font-style: normal;
         font-weight: 400;
