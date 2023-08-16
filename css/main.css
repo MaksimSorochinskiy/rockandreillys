@@ -199,6 +199,37 @@ h2 {
   width: 60%;
   padding: 24px;
   background: #F3EDE2;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.form-input {
+  border: 2px solid #064833;
+  background: transparent;
+  width: 100%;
+  padding: 16px;
+}
+
+.form-box {
+  gap: 16px;
+}
+
+.form-label {
+  width: 50%;
+  color: #0E0E0E;
+  line-height: 24px;
+}
+
+.form-btn input {
+  background: #CEA35D;
+  padding: 16px 0px;
+  border: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
 }
 
 header {
