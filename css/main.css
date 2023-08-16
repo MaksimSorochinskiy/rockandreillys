@@ -788,11 +788,10 @@ header .nav-burger {
   .nav a:hover {
     color: var(--gold-color);
   }
-  .footer a:hover {
-    color: var(--gold-color);
-    border-color: var(--gold-color);
+  .footer__icons--inst:hover rect {
+    fill: var(--gold-color);
   }
-  .footer a:hover svg path {
+  .footer__icons--fb:hover path {
     fill: var(--gold-color);
   }
   .form-btn:hover input {

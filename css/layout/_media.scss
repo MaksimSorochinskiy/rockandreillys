@@ -5,13 +5,14 @@
     }
    } 
    .footer {
-        a:hover {
-            color:var(--gold-color);
-            border-color: var(--gold-color);
-            svg {
-                path {
-                    fill:var(--gold-color);
-                }
+        &__icons--inst:hover {
+            rect {
+                fill: var(--gold-color);
+            }
+        }
+        &__icons--fb:hover {
+            path {
+                fill: var(--gold-color);
             }
         }
    }
