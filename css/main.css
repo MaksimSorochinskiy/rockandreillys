@@ -196,7 +196,7 @@ h2 {
   margin: 0 auto;
 }
 .form-section__form {
-  width: 60%;
+  width: 65%;
   padding: 24px;
   background: #F3EDE2;
   font-family: "Inter", sans-serif;
@@ -204,6 +204,14 @@ h2 {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+.form-section__form input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #929292;
 }
 
 .form-input {
@@ -213,8 +221,13 @@ h2 {
   padding: 16px;
 }
 
+.form-box-total .form-label {
+  width: 100%;
+}
+
 .form-box {
   gap: 16px;
+  margin-bottom: 16px;
 }
 
 .form-label {
@@ -230,6 +243,15 @@ h2 {
   text-align: center;
   width: 100%;
   color: #fff;
+}
+
+.form-text {
+  text-align: center;
+  opacity: 0.5;
+  color: #0E0E0E;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 24px;
 }
 
 header {
