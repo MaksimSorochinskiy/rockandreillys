@@ -662,6 +662,9 @@ header .nav-burger {
   height: 100%;
   display: block;
 }
+.press__bg .press__bg--mob, .press__bg .press__bg--tab {
+  display: none;
+}
 .press .container {
   justify-content: center;
   align-items: center;
@@ -851,6 +854,15 @@ header .nav-burger {
   .friends__text {
     width: 80%;
   }
+  .press {
+    padding-bottom: 650px;
+  }
+  .press__bg .press__bg--desk {
+    display: none;
+  }
+  .press__bg .press__bg--tab {
+    display: block;
+  }
   .press__info {
     width: 90%;
   }
@@ -972,5 +984,17 @@ header .nav-burger {
   }
   .form-label {
     width: 100%;
+  }
+  .press {
+    padding-bottom: 350px;
+  }
+  .press__info {
+    width: 100%;
+  }
+  .press__bg .press__bg--mob {
+    display: block;
+  }
+  .press__bg .press__bg--tab {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

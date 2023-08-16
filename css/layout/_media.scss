@@ -81,6 +81,15 @@
         }
     }
     .press {
+        padding-bottom: 650px;
+        &__bg {
+            .press__bg--desk {
+                 display: none;
+            }
+            .press__bg--tab {
+                display: block;
+            }
+       }
         &__info {
             width: 90%;
         }
@@ -223,5 +232,19 @@
     }
     .form-label {
         width: 100%;    
+    }
+    .press {
+        padding-bottom: 350px;
+        &__info {
+            width: 100%;
+        }
+        &__bg {
+            .press__bg--mob {
+                 display: block;
+            }
+            .press__bg--tab {
+                display: none;
+            }
+       }
     }
 }

@@ -17,7 +17,11 @@
                display: block;
                // object-fit: cover;
           }
+          .press__bg--mob,.press__bg--tab {
+               display: none;
+          }
      }
+     
      .container {
           justify-content: center;
           align-items:center;
