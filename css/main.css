@@ -776,8 +776,9 @@ header .nav-burger {
 .footer__nav ul li:not(:last-child) {
   margin-bottom: 8px;
 }
-.footer__down {
-  text-decoration-line: underline;
+.footer__down a {
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--white-color);
 }
 .footer__icons {
   gap: 16px;
@@ -786,6 +787,16 @@ header .nav-burger {
 @media (hover: hover) {
   .nav a:hover {
     color: var(--gold-color);
+  }
+  .footer a:hover {
+    color: var(--gold-color);
+    border-color: var(--gold-color);
+  }
+  .footer a:hover svg path {
+    fill: var(--gold-color);
+  }
+  .form-btn:hover input {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #CEA35D;
   }
 }
 @media screen and (max-height: 700px) {

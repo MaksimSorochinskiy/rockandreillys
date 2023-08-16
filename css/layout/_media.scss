@@ -4,6 +4,22 @@
         color:var(--gold-color);
     }
    } 
+   .footer {
+        a:hover {
+            color:var(--gold-color);
+            border-color: var(--gold-color);
+            svg {
+                path {
+                    fill:var(--gold-color);
+                }
+            }
+        }
+   }
+   .form-btn:hover {
+        input {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #CEA35D;
+        }
+   }
 }
 @media screen and (max-height: 700px) {
     .hero {

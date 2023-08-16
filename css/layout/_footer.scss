@@ -43,7 +43,11 @@
         }
     }
     &__down {
-        text-decoration-line: underline;
+        
+        a {
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--white-color);
+        }
     }
     &__icons {
         gap: 16px;
