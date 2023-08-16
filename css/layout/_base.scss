@@ -162,6 +162,7 @@ h2 {
     background:transparent;
     width: 100%;
     padding: 16px;
+    margin-top: 8px;
 }
 .form-box-total {
     .form-label {
@@ -176,6 +177,13 @@ h2 {
     width: 50%;
     color:#0E0E0E;
     line-height: 24px;
+}
+.form-agree {
+    color:#0E0E0E;
+    margin-bottom: 32px;
+    span {
+        margin-left: 8px;
+    }
 }
 .form-btn {
     input {
