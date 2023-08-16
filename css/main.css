@@ -263,6 +263,10 @@ h2 {
   margin-top: 24px;
 }
 
+hr {
+  opacity: 1;
+}
+
 header {
   position: absolute;
   z-index: 100;
@@ -602,6 +606,7 @@ header .nav-burger {
   background-size: contain;
   height: 46px;
   border: 0;
+  background-color: transparent;
 }
 .drink__box p {
   margin-bottom: 16px;
