@@ -6,4 +6,19 @@ $(function () {
             $("body").toggleClass("body-lock");
         });
     });
+
+
+    $(document).ready(function () {
+        $('#imageSlider').slick({
+            dots: false,
+            arrows: false,
+        });
+
+        $('.accordion-button').click(function () {
+            var buttonIndex = $(this).closest('.accordion-item').index();
+            $('#imageSlider').slick('slickGoTo', buttonIndex); // Переключение слайда в слайдере
+        });
+    });
+
+
 });

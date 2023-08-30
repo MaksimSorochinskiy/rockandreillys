@@ -23,6 +23,13 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
         />
+        <!-- Подключение Slick Carousel CSS и JS -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        
         <link rel="stylesheet" href="./css/main.css" />
 
         <title>main page</title>
@@ -58,7 +65,10 @@
                             <a href="./franchising.html">Franchise</a>
                         </li>
                         <li>
-                            <a href="https://billing.reliabills.com/signup/signup.aspx?vendor=5553">Beer Club</a>
+                            <a
+                                href="https://billing.reliabills.com/signup/signup.aspx?vendor=5553"
+                                >Beer Club</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -154,14 +164,34 @@
                                             >This is the third item's accordion
                                             body.</strong
                                         >
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="location__img">
-                        <img src="./img/store-img.png" alt="" />
+                        <div id="imageSlider">
+                            <div>
+                                <img
+                                    src="./img/about-img.png"
+                                    alt="Изображение 1"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./img/map-bg.png"
+                                    alt="Изображение 2"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./img/drink-bg.jpg"
+                                    alt="Изображение 2"
+                                />
+                            </div>
+                            <!-- Добавьте другие изображения для слайдера -->
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -260,6 +290,10 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         ></script>
         <script src="./js/main.js"></script>
     </body>
