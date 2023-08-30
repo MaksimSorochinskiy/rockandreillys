@@ -23,6 +23,7 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
         <link rel="stylesheet" href="./css/main.css" />
 
         <title>main page</title>
@@ -470,25 +471,10 @@
                     class="video"
                     width="300"
                     height="200"
-                    controls="controls"
-                    controls
-                    preload="auto"
-                    autoplay="autoplay"
-                    loop
-                    muted
-                    playsinline
+                    id="player" playsinline controls
                 >
                     <source src="./video/video.mp4" type="video/mp4" />
                 </video>
-                <iframe
-                    width="350"
-                    height="315"
-                    src="https://www.youtube.com/embed/TOrnUquxtwA?si=gK65Mg-K_GbSJYat"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                ></iframe>
                 <!-- <iframe id="video-iframe" width="300" height="315" src="./video/video.mp4" frameborder="0" allowfullscreen controls></iframe> -->
             </div>
         </footer>
@@ -499,6 +485,7 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"
         ></script>
+        <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
